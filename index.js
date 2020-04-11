@@ -254,7 +254,7 @@ http.createServer((req, res) => {
 
             console.log(' ');
             console.log('Título​: ​Más Votadas.');
-            function contarMejores (unArray) {
+            function contarMejores () {
                 let totalMejores = 0
                 for (let i = 0; i < movies.length; i++) {
                     let average = movies[i].vote_average;
@@ -264,7 +264,7 @@ http.createServer((req, res) => {
                 return totalMejores;
             }
             console.log(' ');
-            console.log('Total de peliculas: ' + contarMejores(movies));
+            console.log('Total de peliculas: ' + contarMejores());
             for (let i = 0; i < movies.length; i++) {
                     
                 let average = movies[i].vote_average;
